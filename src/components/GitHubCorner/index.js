@@ -1,6 +1,6 @@
 // src/components/GitHubCorner/index.js
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   border: 0;
   right: 0;
   z-index: 20;
-`
+`;
 
 const SVGWrapper = styled.svg`
   fill: ${({ theme }) => theme.colors.secondary};
@@ -39,7 +39,7 @@ const SVGWrapper = styled.svg`
       animation: octocat-wave 560ms ease-in-out;
     }
   }
-`
+`;
 
 // eslint-disable-next-line react/prop-types
 export default function GitHubCorner({ projectUrl }) {
@@ -51,7 +51,7 @@ export default function GitHubCorner({ projectUrl }) {
           <path
             d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
             fill="currentColor"
-            style={{ transformOrigin: "130px 106px" }}
+            style={{ transformOrigin: '130px 106px' }}
             className="octo-arm"
           />
           <path
@@ -62,5 +62,5 @@ export default function GitHubCorner({ projectUrl }) {
         </SVGWrapper>
       </a>
     </Wrapper>
-  )
+  );
 }
